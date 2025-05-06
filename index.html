@@ -13,33 +13,31 @@
 
   <body>
     
-      <div id="Header">
-        <div class=" container">
-          <nav>
-            <!-- From Uiverse.io by ZacharyCrespin --> 
-                    <div class="loader">
-             <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-              <div class="loader-square"></div>
-            <div class="loader-square"></div>
-              <div class="loader-square"></div>
-               <div class="loader-square"></div>
-  </div>
-           
-             
-     <!-- Navigation Menu -->
-     <body>
-
-        <!-- Navigation Menu at the Top -->
+    <div id="Header">
+      <div class=" container">
         <nav>
-          <ul>
-            <li><a href="#Header" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About Me</a></li>
-            <li><a href="#contact" class="nav-link">Contact Me</a></li>
-            <li><a href="#social-media" class="nav-link">Social Media</a></li>
-          </ul>
-        </nav>
+          <!-- From Uiverse.io by ZacharyCrespin --> 
+                  <div class="loader">
+           <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+          <div class="loader-square"></div>
+            <div class="loader-square"></div>
+             <div class="loader-square"></div>
+</div>
+         
+           
+   <!-- Navigation Menu -->
+<nav>
+<ul>
+  <li><a href="#Header" class="nav-link">Home</a></li>
+  <li><a href="#about" class="nav-link">About Me</a></li>
+  <li><a href="#contact" class="nav-link">Contact Me</a></li>
+  <li><a href="#social-media" class="nav-link">Social Media</a></li>
+</ul>
+</nav>
+      
       
         <div id="Header">
           <div class="container">
@@ -51,9 +49,8 @@
           
           <div class="header-text">
             <p>Second-Year College Student at STI Alaminos</p>
-            <h1>Hi, I am <span>Roman</span><br>Gero from Poblacion, Mabini, Pangasinan</h1>
+            <h1>Hi, I am <span>Roman</span><br>Gero i Am <strong>Web Developer</strong></h1>
           </div>
-          
 
           
         </div>
@@ -227,12 +224,16 @@
   
           <div class="portfolio-item">
             <a href="roman" data-lightbox="portfolio">
-                <img src="" alt="A collection of pixel art I created.">
+              <img src="your-image.jpg" alt="A collection of pixel art I created.">
             </a>
             <h3>Pixel Art Collection</h3>
             <p>A series of pixel art pieces created using Canva. This project allowed me to explore digital art techniques and color palettes. Each piece focuses on [mention a theme or style].</p>
             <p><strong>Tools:</strong> Canva</p>
+          
+            <!-- 🔽 Download button -->
+            <a href="downloads/pixel-art-collection.zip" download class="btn-download">Download Collection</a>
           </div>
+          
   
           <div class="portfolio-item">
             <a href="pictures" data-lightbox="portfolio">
@@ -242,6 +243,7 @@
             <p>A curated selection of photographs from my personal gallery. This collection highlights my interest in capturing [mention specific types of photography you enjoy, e.g., landscapes, portraits, everyday life, abstract].</p>
             <p>Through these images, I aim to convey [mention what you try to express through your photography, e.g., emotions, perspectives, stories].</p>
             <p><strong>Tools:</strong> [Mention any camera or editing software you commonly use, e.g., Smartphone Camera, Adobe Lightroom (if applicable)]</p>
+            <a href="downloads/pixel-art-collection.zip" download class="btn-download">Download Collection</a>
           </div>
   
           <div class="portfolio-item">
@@ -252,6 +254,7 @@
             <p>This gallery represents a selection of my artistic endeavors spanning from 2019 to 2023. Within this period, I explored various styles and mediums, including [mention specific mediums you used, e.g., digital painting, traditional drawing, sketching, mixed media].</p>
             <p>These artworks reflect my evolving artistic skills and my interest in [mention recurring themes or subjects in your art, e.g., portraiture, fantasy art, abstract concepts, character design]. Each piece offers a glimpse into my creative process and the development of my personal artistic voice.</p>
             <p><strong>Tools:</strong> [Mention the tools or software you used, e.g., Procreate, Adobe Photoshop, pencils, watercolors]</p>
+            <a href="downloads/pixel-art-collection.zip" download class="btn-download">Download Collection</a>
           </div>
   
         </div>
@@ -386,87 +389,98 @@
   <!-- Footer Styles -->
   <style>
     #footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-  
-    #footer p {
-      font-size: 14px;
-      margin: 0;
-    }
-  
-    /* Back to Top Button Styles */
-    .back-to-top-btn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 99;
-        border: none;
-        outline: none;
-        background: linear-gradient(145deg, #2e2e2e, #1c1c1c);
-        color: #ddd;
-        cursor: pointer;
-        padding: 12px 20px;
-        border-radius: 50%;
-        font-size: 16px;
-        opacity: 0;
-        transition: opacity 0.5s ease, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.05);
-        transform-style: preserve-3d;
-        perspective: 1000px;
-    }
-  
-    .back-to-top-btn.show {
-        display: block;
-        opacity: 1;
-    }
-  
-    .back-to-top-btn:hover {
-        background: linear-gradient(145deg, #3a3a3a, #1a1a1a);
-        color: #fff;
-        transform: translateY(-6px) rotateX(8deg) rotateY(-8deg) scale(1.1);
-        box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.08);
-    }
-  
-    .back-to-top-btn:active {
-        transform: scale(0.95) translateY(2px) rotateX(4deg);
-        box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.6);
-    }
-  
-    .back-to-top-text {
-        display: inline-block;
-        margin-right: 10px;
-        transition: opacity 0.3s ease;
-    }
-  
-    .back-to-top-icon {
-        fill: #ddd;
-        transition: transform 0.3s ease;
-    }
-  
-    .back-to-top-btn:hover .back-to-top-icon {
-        transform: translateY(-3px);
-    }
-  
-    @media screen and (max-width: 600px) {
-        .back-to-top-btn {
-            font-size: 14px;
-            padding: 10px 15px;
-        }
-        .back-to-top-text {
-            display: none;
-        }
-    }
-  
-    @media screen and (max-width: 400px) {
-        .back-to-top-btn {
-            font-size: 12px;
-            padding: 8px 12px;
-        }
-    }
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer p {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Back to Top Button Styles */
+.back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: linear-gradient(145deg, #2e2e2e, #1c1c1c);
+  color: #ddd;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 50%;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.05);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.back-to-top-btn.show {
+  display: block;
+  opacity: 1;
+}
+
+.back-to-top-btn:hover {
+  background: linear-gradient(145deg, #3a3a3a, #1a1a1a);
+  color: #fff;
+  transform: translateY(-6px) rotateX(8deg) rotateY(-8deg) scale(1.1);
+  box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.08);
+}
+
+.back-to-top-btn:active {
+  transform: scale(0.95) translateY(2px) rotateX(4deg);
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.back-to-top-text {
+  display: inline-block;
+  margin-right: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top-icon {
+  fill: #ddd;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top-btn:hover .back-to-top-icon {
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 600px) {
+  .back-to-top-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .back-to-top-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .back-to-top-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
   </style>
   
   <!-- JavaScript -->
