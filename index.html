@@ -324,6 +324,41 @@
 </div>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default form submission behavior
+
+      // Basic validation
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      // Simple email format validation
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      // Show confirmation message (you can enhance this with a modal or animation)
+      alert("Thank you for your message, " + name + "! We'll get back to you soon.");
+
+      // Optionally, clear the form
+      form.reset();
+    });
+  });
+</script>
+
+
+
 <!-- Contact Columns -->
 <div class="contact-columns">
   <!-- Email Column -->
